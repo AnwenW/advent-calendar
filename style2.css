@@ -2,61 +2,35 @@ body {
   background-color: #97edd2;
   font-family: 'Life Savers', Courier;
 }
-
 /* ========   MOBILE-FIRST GRID LAYOUT   ======= */
-
 .calendar-grid {
   display: grid;
   width: 96%;
   max-width: 900px;
   margin: 2% auto;
-
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 25px;
-
-  grid-template-areas:    "title    title     title"
-                          "day23    day20     day12"
-                          "day2     day14     day4"
-                          "day5     day22     day16"
-                          "day1     day7      day9"
-                          "day10    day11     day18"
-                          "day13    day3      day15"
-                          "day6     day17     day8"
-                          "day19    day24     day21";
+  grid-template-areas: "title    title     title" "day23    day20     day12" "day2     day14     day4" "day5     day22     day16" "day1     day7      day9" "day10    day11     day18" "day13    day3      day15" "day6     day17     day8" "day19    day24     day21";
 }
-
 /* =======    MEDIA QUERY -- DESKTOP LAYOUT  =======  */
-
 @media only screen and (min-width: 500px) {
   .calendar-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:    "title      title     title     day2      day7      day8"
-                            "title      title     title     day4      day11     day12"
-                            "title      title     title     day19     day9      day13"
-                            "day6       day1      day24     day24     day21     day20"
-                            "day17      day18     day24     day24     day5      day22"
-                            "day3       day23     day16     day14     day10     day15";
+    grid-template-areas: "title      title     title     day2      day7      day8" "title      title     title     day4      day11     day12" "title      title     title     day19     day9      day13" "day6       day1      day24     day24     day21     day20" "day17      day18     day24     day24     day5      day22" "day3       day23     day16     day14     day10     day15";
   }
 }
-
-section div {
-  background: #82e0c2;
-}
-
 /* =======    INDIVIDUAL GRID ITEMS   =======  */
-
 .title {
   grid-area: title;
+  background: #82e0c2;
+  border-radius: 6px;
 }
-
 .title-text {
-  font-size: 8vw;
   transform: rotate(-10deg);
   padding: 20px;
   text-align: center;
 }
-
 .day1 {
   grid-area: day1;
 }
@@ -129,60 +103,54 @@ section div {
 .day24 {
   grid-area: day24;
 }
-
 /* =======    DOOR STYLES   =======  */
-
 .calendar-grid input {
   display: none;
 }
-
 label {
   perspective: 1000px;
   transform-style: preserve-3d;
   cursor: pointer;
-
   display: flex;
   min-height: 100%;
   width: 100%;
   height: 120px;
 }
-
 .door {
   width: 100%;
+  height: 100%;
+  perspective: 1000px;
   transform-style: preserve-3d;
   transition: all 300ms;
   border: 3px dotted transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 110px;
 }
-
+.door.no-hover {
+  border-color: none;
+}
+.door:not(.no-hover):hover {
+  border-color: red;
+}
 .door div {
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   backface-visibility: hidden;
-   -webkit-backface-visibility: hidden;
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.door .front {
+  background: #82e0c2;
+}
 .door .back {
-   background-color: #2e313d;
-   transform: rotateY(180deg);
-}
-
-label:hover .door {
-   border-color: red;
-}
-
-/* :checked + .door {
+  background-color: #2e313d;
   transform: rotateY(180deg);
-} */
-
-.open.door {
-    transform: rotateY(180deg);
 }
-
-.active {
-    cursor: pointer;
-  }
+.open {
+  transform: rotateY(180deg);
+}
