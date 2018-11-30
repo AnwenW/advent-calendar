@@ -1,5 +1,7 @@
 body {
   background-color: #97edd2;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snow-bg.svg) no-repeat top center #82d8cb;
+  background-size: cover;
   font-family: 'Life Savers', Courier;
 }
 /* ========   MOBILE-FIRST GRID LAYOUT   ======= */
@@ -10,14 +12,27 @@ body {
   margin: 2% auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 25px;
-  grid-template-areas: "title    title     title" "day23    day20     day12" "day2     day14     day4" "day5     day22     day16" "day1     day7      day9" "day10    day11     day18" "day13    day3      day15" "day6     day17     day8" "day19    day24     day21";
+  grid-gap: 15px;
+  grid-template-areas:"title    title     title"
+                      "day23    day20     day12"
+                      "day2     day14     day4"
+                      "day5     day22     day16"
+                      "day1     day7      day9"
+                      "day10    day11     day18"
+                      "day13    day3      day15"
+                      "day6     day17     day8"
+                      "day19    day24     day21";
 }
 /* =======    MEDIA QUERY -- DESKTOP LAYOUT  =======  */
 @media only screen and (min-width: 500px) {
   .calendar-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "title      title     title     day2      day7      day8" "title      title     title     day4      day11     day12" "title      title     title     day19     day9      day13" "day6       day1      day24     day24     day21     day20" "day17      day18     day24     day24     day5      day22" "day3       day23     day16     day14     day10     day15";
+    grid-template-areas:"title      title     title     day2      day7      day8"
+                        "title      title     title     day4      day11     day12"
+                        "title      title     title     day19     day9      day13"
+                        "day6       day1      day24     day24     day21     day20"
+                        "day17      day18     day24     day24     day5      day22"
+                        "day3       day23     day16     day14     day10     day15";
   }
 }
 /* =======    INDIVIDUAL GRID ITEMS   =======  */
@@ -33,6 +48,9 @@ body {
 }
 .day1 {
   grid-area: day1;
+}
+.day1 .back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child.svg);
 }
 .day2 {
   grid-area: day2;
@@ -107,22 +125,13 @@ body {
 .calendar-grid input {
   display: none;
 }
-label {
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  display: flex;
-  min-height: 100%;
-  width: 100%;
-  height: 120px;
-}
 .door {
   width: 100%;
   height: 100%;
   perspective: 1000px;
   transform-style: preserve-3d;
   transition: all 300ms;
-  border: 3px dotted transparent;
+  border: 2px dashed transparent;
   border-radius: 10px;
   cursor: pointer;
   min-height: 110px;
@@ -145,12 +154,55 @@ label {
   justify-content: center;
 }
 .door .front {
-  background: #82e0c2;
+  background: rgba(255, 255, 255, 0.2);
 }
 .door .back {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-color: #2e313d;
   transform: rotateY(180deg);
 }
 .open {
   transform: rotateY(180deg);
+}
+/* =======   MODAL (BACKGROUND)   =======  */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* =======   MODAL CONTENT + BOX   =======  */
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  max-width: 600px;
+  min-height: 200px;
+}
+/* =======   MODAL CLOSE BUTTON (X)   =======  */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

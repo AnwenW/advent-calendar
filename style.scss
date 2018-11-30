@@ -1,50 +1,7 @@
-/* ///
-/// Viewport sized typography with minimum and maximum values
-///
-/// @author Eduardo Boucas (@eduardoboucas)
-///
-/// @param {Number}   $responsive  - Viewport-based size
-/// @param {Number}   $min         - Minimum font size (px)
-/// @param {Number}   $max         - Maximum font size (px)
-///                                  (optional)
-/// @param {Number}   $fallback    - Fallback for viewport-
-///                                  based units (optional)
-///
-/// @example scss - 5vw font size (with 50px fallback),
-///                 minumum of 35px and maximum of 150px
-///  @include responsive-font(5vw, 35px, 150px, 50px);
-/// */
-
-
-// @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
-//   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
-//   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
-//   $min-breakpoint: $min / $responsive-unitless * 100;
-
-//   @media (max-#{$dimension}: #{$min-breakpoint}) {
-//     font-size: $min;
-//   }
-
-//   @if $max {
-//     $max-breakpoint: $max / $responsive-unitless * 100;
-
-//     @media (min-#{$dimension}: #{$max-breakpoint}) {
-//       font-size: $max;
-//     }
-//   }
-
-//   @if $fallback {
-//     font-size: $fallback;
-//   }
-
-//   font-size: $responsive;
-// }
-
-
-/* ////// */
-
 body {
   background-color: #97edd2;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snow-bg.svg) no-repeat top center #82d8cb;
+  background-size: cover;
   font-family: 'Life Savers', Courier;
 }
 
@@ -58,7 +15,7 @@ body {
 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 25px;
+  grid-gap: 15px;
 
   grid-template-areas:    "title    title     title"
                           "day23    day20     day12"
@@ -85,10 +42,6 @@ body {
   }
 }
 
-// section div {
-//   background: #82e0c2;
-// }
-
 /* =======    INDIVIDUAL GRID ITEMS   =======  */
 
 .title {
@@ -106,6 +59,9 @@ body {
 
 .day1 {
   grid-area: day1;
+}
+.day1 .back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child.svg);
 }
 .day2 {
   grid-area: day2;
@@ -183,29 +139,15 @@ body {
   display: none;
 }
 
-label {
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  cursor: pointer;
-
-  display: flex;
-  min-height: 100%;
-  width: 100%;
-  height: 120px;
-}
-
 .door {
   width: 100%;
   height: 100%;
   perspective: 1000px;
   transform-style: preserve-3d;
   transition: all 300ms;
-  border: 3px dotted transparent;
+  border: 2px dashed transparent;
   border-radius: 10px;
-
-  // label
   cursor: pointer;
-  // display: flex;
   min-height: 110px;
   &.no-hover {
    border-color: none;
@@ -221,38 +163,113 @@ label {
    width: 100%;
    backface-visibility: hidden;
    -webkit-backface-visibility: hidden;
-
    border-radius: 6px;
-
    display: flex;
    align-items: center;
    justify-content: center;
  }
 
 .door .front {
-  background: #82e0c2;
+  background: rgba(255,255,255,0.2);
 }
 
 .door .back {
-   // background-size: contain;
-   // background-position: center center;
-   // background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center center;
+   background-repeat: no-repeat;
    background-color: #2e313d;
    transform: rotateY(180deg);
 }
-
-// label:hover .door {
-//    border-color: red;
-// }
-
-// :checked + .door {
-//   transform: rotateY(180deg);
-// }
 
 .open {
   transform: rotateY(180deg);
 }
 
-// .no-hover {
-//   border-color: black;
+/* =======   MODAL (BACKGROUND)   =======  */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* =======   MODAL CONTENT + BOX   =======  */
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  max-width: 600px;
+  min-height: 200px;
+}
+
+/* =======   MODAL CLOSE BUTTON (X)   =======  */
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+/* ///
+/// Viewport sized typography with minimum and maximum values
+///
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+///  @include responsive-font(5vw, 35px, 150px, 50px);
+/// */
+
+
+// @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+//   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+//   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+//   $min-breakpoint: $min / $responsive-unitless * 100;
+
+//   @media (max-#{$dimension}: #{$min-breakpoint}) {
+//     font-size: $min;
+//   }
+
+//   @if $max {
+//     $max-breakpoint: $max / $responsive-unitless * 100;
+
+//     @media (min-#{$dimension}: #{$max-breakpoint}) {
+//       font-size: $max;
+//     }
+//   }
+
+//   @if $fallback {
+//     font-size: $fallback;
+//   }
+
+//   font-size: $responsive;
 // }
