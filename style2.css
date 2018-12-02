@@ -148,7 +148,7 @@ body {
   font-size: 40px;
 }
 .door.no-hover {
-  border-color: none;
+  border-color: transparent;
 }
 .door:not(.no-hover):hover {
   border-color: #f60cff;
