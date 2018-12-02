@@ -1,10 +1,11 @@
 body {
-  background-color: #97edd2;
+  background-color: #29bcbc;
   /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snow-bg.svg) no-repeat top center #82d8cb; */
-  background: url("images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_mobile.svg") no-repeat top center #82d8cb;
+  background: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_mobile.png") no-repeat top center #29bcbc;
   background-size: 120vh;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
 /* ========   MOBILE-FIRST GRID LAYOUT   ======= */
 .calendar-grid {
   display: grid;
@@ -28,7 +29,7 @@ body {
 @media only screen and (min-width: 520px) {
 
   body {
-    background: url("images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full.svg") no-repeat center center #82d8cb;
+    background: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full.png") no-repeat center center #29bcbc;
     background-size: 130vw;
   }
 
@@ -48,12 +49,13 @@ body {
   background: rgba(200, 255, 255, 0.6);
   border-radius: 6px;
   min-height: 200px;
-  font-family: 'Life Savers', Courier;
 }
 .title-text {
   transform: rotate(-10deg);
   padding: 20px;
   text-align: center;
+  font-family: 'Berkshire Swash', Courier;
+  color: #0a5656;
 }
 .day1 {
   grid-area: day1;
@@ -144,8 +146,9 @@ body {
   border-radius: 10px;
   cursor: pointer;
   min-height: 110px;
-  font-family: 'Life Savers', Courier;
-  font-size: 40px;
+  font-family: 'Berkshire Swash', Courier;
+  font-size: 50px;
+  color: #0a5656;
 }
 .door.no-hover {
   border-color: transparent;
@@ -166,20 +169,20 @@ body {
 }
 .door .front {
   background: rgba(200, 255, 255, 0.6);
-  text-shadow:2px 2px 0 #ffffff,
+  /* text-shadow:2px 2px 0 #ffffff,
               2px -2px 0 #ffffff,
               -2px 2px 0 #ffffff,
               -2px -2px 0 #ffffff,
               2px 0px 0 #ffffff,
               0px 2px 0 #ffffff,
               -2px 0px 0 #ffffff,
-              0px -2px 0 #ffffff;
+              0px -2px 0 #ffffff; */
 }
 .door .back {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #2e313d;
+  background-color: #fffcf7;
   transform: rotateY(180deg);
 }
 .open {
@@ -204,10 +207,11 @@ body {
 }
 /* =======   MODAL CONTENT + BOX   =======  */
 .modalContent {
-  background-color: #fefefe;
+  background-color: #fffcf7;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 6px;
   width: 70%;
   max-width: 600px;
   min-height: 200px;
