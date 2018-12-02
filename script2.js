@@ -1,8 +1,8 @@
-// ======  Want each of 24 calendar doors to open, on click, only if number matches today's date or earlier. To test, when date is after 23rd of the month and all doors will be openable, set var todaysDate to a smaller fixed number instead to pretend date is e.g. 10th ====== //
+// ======  Want each of 24 calendar doors to open, on click, only if number matches today's date or earlier. To test, when date is after 23rd of the month and all doors will be openable, set var todaysDate to a smaller fixed number instead to pretend date is e.g. 5th ====== //
 
-var todaysDate = new Date();
-// console.log(todaysDate.getDate());
-// var todaysDate = 10;
+var date = new Date();
+var todaysDate = date.getDate();
+// var todaysDate = 5;
 
 // =====  Get the modal popup box + content + close span ===== //
 
@@ -48,7 +48,8 @@ var moreInfo = [
 
 function noHover() {
 
-  var calendarNum = this.innerHTML;
+  var doorNumber = this.innerHTML;
+  var calendarNum = parseInt(doorNumber, 10);
 
   if (calendarNum > todaysDate) {
     this.parentNode.classList.add("no-hover");
@@ -77,10 +78,12 @@ for (var i = 0; i < doorBacks.length; i++) {
 
 function clickFront() {
 
-  var calendarNum = this.innerHTML;
+  var numberClicked = this.innerHTML;
+  var calendarNum = parseInt(numberClicked, 10);
+  // console.log(numberClicked);
+  // console.log(calendarNum);
 
   if (calendarNum <= todaysDate) {
-    // console.log(calendarNum);
    this.parentNode.classList.toggle("open");
   }
 
