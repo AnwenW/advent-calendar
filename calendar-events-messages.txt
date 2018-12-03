@@ -1,4 +1,4 @@
-Saturday 1st December 
+Saturday 1st December
 
 BEYOND Beach Hut Advent Calendar
 
@@ -14,7 +14,11 @@ http://www.beyondchurch.co.uk/
 
 Price: Free
 
-
+<h1>BEYOND Beach Hut Advent Calendar</h1>
+<p>For this popular community arts event, a different Hove beach hut opens its doors to display a Nativity-themed art installation, reminding people of the roots of Advent.</p>',
+// <p>1st to 24th December, 5.30 – 6.30pm.</p>
+// <p>For map and details of which hut will be open each evening, visit: <a href="http://www.beyondchurch.co.uk/" target="_blank">beyondchurch.co.uk/</a></p>
+// <p>Price: Free</p>
 
 
 Sunday 2nd December
@@ -102,24 +106,24 @@ Eventbrite for tickets
 Friday 7th December
 
 
-New England House Artists’ Open Studios  
- 
+New England House Artists’ Open Studios
+
 Friday 7 December 2018,11am - 8pm
 Saturday 8 December 2018,11am - 6pm
 Sunday 9 December 2018,11am - 6pm
- 
+
 New England House, New England Street
 
 http://nehopenstudios.org.uk/
 
-
+35+ artists and makers open the doors to their studios in New England House for 3 days. Enjoy an alternative to high street Christmas shopping and buy unique gifts directly from the makers.
 
 
 Saturday 8th December
 
 Santa Dash
 
-Brighton’s most fun event… ho ho ho! Head down to Hove seafront to watch a crowd of Santa’s running in aid of Rockinghorse children’s charity
+Brighton’s most fun event… ho ho ho! Head down to Hove seafront to watch a crowd of Santa’s running in aid of Rockinghorse children’s charity.
 
 Start
 10:30am on Hove Lawns near the Peace Statue.
@@ -129,12 +133,12 @@ http://www.santadashbrighton.co.uk/
 
 then head to…
 
-Creative Differences 
+Creative Differences
 Green Door Store
 11am – 4pm
 Price: £2 entry
 
-A brand new inclusive Christmas market hosting illustrators to record labels and everything in-between, for a varied melting pot of artistic talent! Not only that, there will be workshops, DJ's, Christmas decorations and plenty of mulled wine to go around... so why not get your Christmas Shopping done and support local businesses and independent craft!
+A brand new creative Christmas market hosting illustrators to record labels and everything in-between, plus workshops, DJ's, Christmas decorations and plenty of mulled wine to go around!
 
 https://creative-differences.co.uk/
 
@@ -144,14 +148,9 @@ https://creative-differences.co.uk/
 Sunday 9th December
 
 
-Experience a magical Christmas at the Royal Pavilion. The spectacular Banqueting Room table is laid with Georgian style desserts and the palace is transformed with festive decorations and glittering trees.
+Experience the Royal Pavilion transformed with festive decorations and glittering trees, and a replica of Queen Victoria’s sleigh awaits you, where you can have Christmas photos!
 
-A replica of Queen Victoria’s sleigh awaits you and your family in the Music Room, where you can create your Christmas photos to remember the day!
-
-Pick up our free Meet the Dragons family trail and see who you can find as you set off  on your tour round the palace. Available every day.
-
-Drop-in craft activities take place on these dates:
-Saturday 8 & Sunday 9, Saturday 15 & Sunday 16, Friday 21, Saturday 22 & Sunday 23 December, 11am-5pm (last admission 4.30pm).
+Drop-in craft activities take place on 8th & 9th, 15th & 16th, 21st – 23rd December, 11.00am – 5.00pm (last admission 4.30pm).
 
 https://brightonmuseums.org.uk/royalpavilion/whattosee/christmas-at-the-royal-pavilion/
 
@@ -167,7 +166,7 @@ The Old Market
 
 THE club night for learning disabled people and their friends.
 
-If you like to party, dance to bands, watch films, hang out with friends, see performance, then you should come to the Blue Camel Club. Held three or four times a year at The Old Market, it is the club night for learning disabled people and their friends.
+If you like to party, dance to bands, watch films, hang out with friends, see performance, then you should come to the Blue Camel Club.
 
 With live music from:
 THE REVS // BUBBALOO // TOO HOT FOR CANDY
@@ -204,7 +203,7 @@ Website??
 
 or
 
-Beatles White Album 50th Anniversary 
+Beatles White Album 50th Anniversary
 TOM
 
 
@@ -323,7 +322,7 @@ Join us for a drink and & mince pie from 5.45 pm.
 Carols by Candlelight service at 6.30 pm.
 During the service there will be an opportunity to hang a star on our Christmas Tree in memory of a loved one.
 
-Price: Free/ Donation to Friends of Brighton & Hove Hospitals 
+Price: Free/ Donation to Friends of Brighton & Hove Hospitals
 
 https://www.brightonhospitalfriends.org.uk/support-us/fundraising/events/
 
@@ -334,8 +333,8 @@ https://www.brightonhospitalfriends.org.uk/support-us/fundraising/events/
 
 Friday 21st December
 Burning the Clocks
-One of Brighton’s best-loved public events. This year’s theme is Remembrance. The lantern parade kicks off at 6pm from New Road, ending on Madeira Drive with dance performance and spectacular firework display. 
-Details and donations at: 
+One of Brighton’s best-loved public events. This year’s theme is Remembrance. The lantern parade kicks off at 6pm from New Road, ending on Madeira Drive with dance performance and spectacular firework display.
+Details and donations at:
 
 Crowdfunder: https://www.crowdfunder.co.uk/burning-the-clocks-2018
 http://samesky.co.uk/events/burning-the-clocks/route/
@@ -379,7 +378,7 @@ Have a great Christmas!
 More free events??
 
 
-Christmas lights 
+Christmas lights
 
 
 Pubs/ cafes.. anything at Marwood? Thor’s teepee outside the library, warm up with hot cocoa, mulled wine, or something a little stronger
@@ -392,7 +391,7 @@ Brighton Metropole
 
 JW Productions presents: Peter Pan until 31st December
 
-JM Barrie’s classic Peter Pan comes to vibrant life this Christmas with a sprinkle of fairy dust and plenty of surprises. 
+JM Barrie’s classic Peter Pan comes to vibrant life this Christmas with a sprinkle of fairy dust and plenty of surprises.
 
 Peter and Tinkerbell invite you to the unbelievable, magical world of Neverland (along with Wendy and the Darling family of course!). A place where lost boys run riot, pirates are in fine voice, crocodiles go tick-tock, and the villain has a very shiny hook!
 
@@ -423,7 +422,3 @@ https://britishairwaysi360.com/event/santa-flights/
 Jack & The Beanstalk listing https://whatson.brighton.co.uk/event/108650/20%20Sep%202018
 
 Grimm Tales Brighton Little Theatre listing https://whatson.brighton.co.uk/event/Grimm%20Tales,%20adapted%20by%20Carol%20Ann%20Duffy,%20dramatized%20by%20Tim%20Supple/07%20Dec%202018
-
-
-
-

@@ -30,7 +30,7 @@ body {
 
   body {
     background: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full_75.png") no-repeat center center #bcf4f4;
-    background-size: 130vw;
+    background-size: 125vw;
   }
 
   .calendar-grid {
@@ -46,10 +46,10 @@ body {
 /* =======    INDIVIDUAL GRID ITEMS   =======  */
 .title {
   grid-area: title;
-  background: rgba(200, 255, 255, 0.6);
+  background: rgba(200, 255, 255, 0.9);
   border-radius: 6px;
   min-height: 200px;
-  border: 2px solid #f60cff;
+  border: 2px dotted #f60cff;
 }
 .title-text {
   /* transform: rotate(-10deg); */
@@ -211,7 +211,8 @@ body {
   background-color: #fffcf7;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
+  /* border: 1px solid #888; */
+  border: 1px solid #f60cff;
   border-radius: 6px;
   width: 70%;
   max-width: 600px;
