@@ -142,7 +142,7 @@ A brand new creative Christmas market hosting illustrators to record labels and 
 
 https://creative-differences.co.uk/
 
-
+  '<h2>Creative Differences</h2><p>A brand new creative Christmas market hosting illustrators to record labels and everything in-between, plus workshops, DJs, Christmas decorations and plenty of mulled wine to go around!</p><p>11.00am – 4.00pm<br>Green Door Store</p><p><a href="https://creative-differences.co.uk/" target="_blank">creative-differences.co.uk</a></p><p>Price: £2.00 entry</p>',
 
 
 Sunday 9th December
@@ -201,6 +201,8 @@ Waterloo Street, Hove
 Time??
 Website??
 
+<h3>12th December</h3><h2>Christmas Ghost Stories</h2><p>Never mind the tinsel and the presents, the turkey and the mistletoe. Take time out to celebrate the festive season the Victorian way — gathered together for spooky stories and tales of terror!</p><p>7.30pm – 9.30pm<br>The Southern Belle, Waterloo Street</p><p><a href="https://www.facebook.com/events/290706548450860/" target="_blank">See the event’s Facebook page</a></p><p>Price: ???</p>
+
 or
 
 Beatles White Album 50th Anniversary
@@ -240,6 +242,15 @@ Details?
 Time?
 Website?
 
+{ date: "14th December",
+  title: "Secret Comedy Club",
+  content: "'The best small comedy club in Brighton & Hove' and the only regular comedy Friday night in an independent venue.",
+  time: "7.00 pm – 11.00 pm",
+  location: "Artista Cafe & Gallery, Waterloo Street",
+  price: "£8.00 advance/ £10.00 on the door",
+  linkUrl: "https://www.facebook.com/events/684656945244518/?event_time_id=684657048577841",
+  linkText: "Visit Facebook event"
+},
 
 
 Saturday 15th December
@@ -320,7 +331,7 @@ St George's Church, 93 St George's Road, Kemp Town
 A carol service for everyone, featuring NHS Community Choir Brighton and The Choir of St George's Church.
 Join us for a drink and & mince pie from 5.45 pm.
 Carols by Candlelight service at 6.30 pm.
-During the service there will be an opportunity to hang a star on our Christmas Tree in memory of a loved one.
+
 
 Price: Free/ Donation to Friends of Brighton & Hove Hospitals
 
@@ -350,6 +361,24 @@ Take a break and visit Brighton Museum…
 Madness
 Brighton Centre
 
+Ghost Stories For Christmas 2018 - Now We Are Six
+Thu Dec 20 2018 at 07:30 pm to Sat Dec 22 2018 at 09:30 pm
+Lantern Theatre Brighton 10 Rock Place
+​Suggested age range : 14+
+
+DUE TO POPULAR DEMAND ADDITIONAL PERFORMANCE ADDED 22/12/2018 @ 1.30PM - DOORS OPENING AT 1.30pm AND PERFORMANCE STARTING AT 2.00pm
+
+Doors Open at 7.00pm, Performance starts at 7.30pm. Strictly no late admission.
+
+Tickets £10
+
+Guests will receive a mince pie and glass of mulled wine or apple juice on arrival
+
+Age 14+
+
+Proceeds donated to The Alzheimer's Society
+
+https://www.ghoststoriesforchristmas.com/
 
 
 
