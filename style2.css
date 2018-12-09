@@ -3,7 +3,7 @@ body {
   /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snow-bg.svg) no-repeat top center #82d8cb; */
   background: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_mobile_75.png") no-repeat top center #bcf4f4;
   background-size: 120vh;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Montserrat', Verdana;
 }
 
@@ -101,7 +101,6 @@ body {
   /* text-align: justify;
   text-align-last: center; */
   line-height: 1.5em;
-  font-size: 1.1em;
   margin: 5% 2% 2%;
   /* box-shadow: 0px 0px 15px white; */
   transform: rotate(-1.5deg);
@@ -268,7 +267,7 @@ body {
 .modalContent {
   background-color: #fffcf7;
   margin: 15% auto;
-  padding: 20px;
+  padding: 20px 20px 30px;
   /* border: 1px solid #888; */
   border: 4px solid #fe52ff;
   border-radius: 6px;
@@ -276,6 +275,34 @@ body {
   max-width: 600px;
   min-height: 200px;
   /* box-shadow: 0 0 15px white; */
+  letter-spacing: 0.5px;
+  line-height: 1.4em;
+}
+.modalContent p {
+  font-size: 0.9em;
+}
+.dailyTitle {
+  font-family: 'BioRhyme', Courier;
+  color: #135270;
+}
+.dailyDate {
+  color: #f50cf7;
+}
+.highlight {
+  font-weight: bold;
+  color: #f50cf7;
+}
+
+.dailyLink {
+  background-color: #135270;
+  padding: 5px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.dailyLink:hover {
+  background-color: #2883af;
 }
 
 /* =======   MODAL CLOSE BUTTON (X)   =======  */

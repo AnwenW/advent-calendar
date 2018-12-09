@@ -25,7 +25,7 @@ var moreInfo = [
                     content: "For this popular community arts event, a different Hove beach hut opens its doors each evening to display a Nativity-themed art installation, reminding people of the roots of Advent.",
                     time: "1st to 24th December, 5.30 – 6.30pm.",
                     location: "See website for map and details",
-                    price: "Free ",
+                    price: "Free",
                     linkUrl: "http://www.beyondchurch.co.uk/",
                     linkText: "Visit website"
                   },
@@ -42,7 +42,7 @@ var moreInfo = [
 
                   { date: "3rd December",
                     title: "Brighton & Hove Schools Concert",
-                    content: "A massed choir of over 1200 voices from the city's Primary, Junior and Special Schools will come together to sing seasonal and specially written songs. The choir is joined by Brighton & Hove Youth Wind Orchestra and Brighton & Hove Youth Big Band.",
+                    content: "A choir of over 1200 voices from the city's Primary, Junior and Special Schools will come together to sing seasonal and specially written songs. The choir is joined by Brighton & Hove Youth Wind Orchestra and Brighton & Hove Youth Big Band.",
                     time: "7.00pm – 8.30pm",
                     location: "Brighton Centre",
                     price: "£4.50 — £13.00",
@@ -62,7 +62,7 @@ var moreInfo = [
 
                   { date: "5th December",
                     title: "Lion & Lobster Christmas Market",
-                    content: "A festive market to kick off the countdown to Christmas. Gifts, food, mulled wine and cider, craft beer and artists all wrapped under one roof.",
+                    content: "A festive market to kick off the countdown to Christmas. Gifts, food, mulled wine, craft beer and artists all wrapped under one roof.",
                     time: "5.00pm - 11.00pm",
                     location: "Lion & Lobster, Sillwood Street",
                     price: "Free entry",
@@ -72,7 +72,7 @@ var moreInfo = [
 
                   { date: "6th December",
                     title: "SPECTRUM",
-                    content: "SPECTRUM is a Brighton Dome music project dedicated to nurturing and cultivating Brighton’s vibrant music scene.<br>Winter special at Brighton Museum. Enjoy a range of unplugged performances in the exhibition rooms and listen to local acts in a way that you won’t have experienced before.",
+                    content: "SPECTRUM is a Brighton Dome music project dedicated to nurturing and cultivating Brighton's vibrant music scene.<br>Winter special at Brighton Museum. Enjoy a range of unplugged performances in the exhibition rooms and listen to local acts in a way that you won't have experienced before.",
                     time: "8.00pm",
                     location: "Brighton Museum",
                     price: "£6.00 advance/ £8.00 on the door",
@@ -95,7 +95,7 @@ var moreInfo = [
                     content: "A crowd of Santas running in aid of Rockinghorse children's charity.",
                     time: "10.30am",
                     location: "Hove Lawns near the Peace Statue",
-                    price: "Make a donation",
+                    price: "Free/ Make a donation",
                     linkUrl: "http://www.santadashbrighton.co.uk/",
                     linkText: "Visit website"
                   },
@@ -142,7 +142,7 @@ var moreInfo = [
 
                   { date: "13th December",
                     title: "The Snowman exhibition",
-                    content: "Nothing says Christmas like The Snowman. To celebrate the 40th anniversary of Raymond Briggs' much loved classic picture book, come and discover the magic in this exhibition of the original illustrations.",
+                    content: "Nothing says Christmas like The Snowman! To celebrate the 40th anniversary of Raymond Briggs' much loved classic picture book, discover the magic in this exhibition of the original illustrations.",
                     time: "Until 6th January 2019",
                     location: "Brighton Museum",
                     price: "Free with Brighton Museum admission (free to Brighton & Hove residents with proof of address)",
@@ -172,10 +172,10 @@ var moreInfo = [
 
                   { date: "16th December",
                     title: "Peter Pan",
-                    content: "JM Barrie's classic Peter Pan comes to vibrant life this Christmas with a sprinkle of fairy dust and plenty of surprises. Peter and Tinkerbell invite you to the unbelievable, magical world of Neverland, a place where lost boys run riot, pirates are in fine voice, crocodiles go tick-tock, and the villain has a very shiny hook!<br>Suitable for all ages and is a perfect 'first-time' theatrical experience.",
+                    content: "JM Barrie's classic Peter Pan comes to life this Christmas with a sprinkle of fairy dust and plenty of surprises. Peter and Tinkerbell invite you to the magical world of Neverland, a place where lost boys run riot, pirates are in fine voice, crocodiles go tick-tock, and the villain has a very shiny hook!<br>Suitable for all ages and is a perfect 'first-time' theatrical experience.",
                     time: "Until 31st December; see website for performance dates and times",
                     location: "Attenborough Centre for the Creative Arts, University of Sussex, Falmer",
-                    price: "From £15",
+                    price: "From £15.00",
                     linkUrl: "https://www.attenboroughcentre.com/index.php?p=events/1991/peter-pan/",
                     linkText: "Visit website"
                   },
@@ -202,7 +202,7 @@ var moreInfo = [
 
                   { date: "19th December",
                     title: "The Animals and Children Took to the Streets",
-                    content: "Like a giant novel burst to life. Seamlessly synchronising live music, performance and storytelling with stunning films and animation, this is the wickedly twisted international hit tale from the multiple award-winning 1927, the company behind Golem and The Magic Flute. Highly receommended!",
+                    content: "Like a giant novel burst to life. Seamlessly synchronising live music, performance and storytelling with stunning films and animation, this is the wickedly twisted international hit tale from the multiple award-winning 1927, the company behind Golem and The Magic Flute. Highly recommended!",
                     time: "Until 12th January 2019; see website for performance dates and times",
                     location: "The Old Market",
                     price: "£18.00 – £29.50 (concessions available)",
@@ -241,8 +241,8 @@ var moreInfo = [
                   },
 
                   { date: "23rd December",
-                    title: "THOR's Tipi Bar",
-                    content: "Take a break from your Christmas preparations and check out Thor's Viking-inspired tipi bar, with real log fire, sweet treats, hot cocoa, glühwein, mulled cider, ale, fizz and more. Children welcome. Skol!",
+                    title: "Thor's Tipi Bar",
+                    content: "Take a break from your Christmas preparations and check out Thor's Viking-inspired tipi bar, with real log fire, sweet treats, hot cocoa, glühwein, ale, fizz and more. Children welcome. Skol!",
                     time: "Until 31st December, 12.00 to 10.00pm",
                     location: "Jubilee Square, Jubilee Street",
                     price: "Free entry",
@@ -252,7 +252,7 @@ var moreInfo = [
 
                   { date: "24th December | Christmas Eve!",
                     title: "Jack & The Beanstalk — Pantomime and Christmas Fayre",
-                    content: "Christmas isn't Christmas without a panto! This new production of Jack & The Beanstalk promises a West End cast, lavish costumes, dazzling special effects... and Daisy the tap-dancing cow! Entrance to the Christmas Fayre is free for all panto ticket holders.<br>Merry Christmas!",
+                    content: "Christmas isn't Christmas without a panto! This new production of Jack & The Beanstalk promises a West End cast, lavish costumes, dazzling special effects... and Daisy the tap-dancing cow! Entrance to the Christmas Fayre is free for all panto ticket holders.<br><strong>Merry Christmas!</strong>",
                     time: "Until 29th December; see website for performance dates and times",
                     location: "Hilton Brighton Metropole",
                     price: "From £20.00",
