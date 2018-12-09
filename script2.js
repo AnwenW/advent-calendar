@@ -1,8 +1,8 @@
-// ======  Want each of 24 calendar doors to open, on click, only if number matches today's date or earlier. To test, when date is after 23rd of the month and all doors will be openable, set var todaysDate to a smaller fixed number instead to pretend date is e.g. 5th ====== //
+// ======  Want each of 24 calendar doors to open, on click, only if number matches today's date or earlier. To test other dates, set var todaysDate to a fixed number to pretend that's today's date. ====== //
 
-// var date = new Date();
-// var todaysDate = date.getDate();
-var todaysDate = 24;
+var date = new Date();
+var todaysDate = date.getDate();
+// var todaysDate = 24;
 
 // =====  Get the modal popup box + content + close span ===== //
 
@@ -275,7 +275,7 @@ function noHover() {
 
 }
 
-// ===== door front: hover + click events ===== //
+// ===== door-front: hover + click events ===== //
 
 var doorFronts = document.querySelectorAll(".front");
 
@@ -284,7 +284,7 @@ for (var i = 0; i < doorFronts.length; i++) {
   doorFronts[i].addEventListener("click", clickFront);
 }
 
-// ===== door back: click event ===== //
+// ===== door-back: click event ===== //
 
 var doorBacks = document.querySelectorAll(".back");
 
@@ -307,11 +307,11 @@ function clickFront() {
 
 };
 
-// ===== door-back click opens the modal + displays corresponding content ===== //
+// ===== door-back: click opens the modal + displays corresponding content ===== //
 
 function clickBack() {
 
-  // find number of corresponding door-front (back has no innerHTML) //
+  // find number of corresponding door-front (as back has no innerHTML of its own) //
   var calendarNum = this.previousElementSibling.innerHTML;
   // -1 from door-front to get correct message array index //
   var calendarNumIndex = calendarNum - 1;

@@ -1,13 +1,14 @@
 body {
-  background-color: #bcf4f4;
-  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snow-bg.svg) no-repeat top center #82d8cb; */
-  background: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_mobile_75.png") no-repeat top center #bcf4f4;
-  background-size: 120vh;
-  /* font-family: 'Open Sans', sans-serif; */
+  background-color: #266c8e;
+  background-image: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_mobile_v2.png"), url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/snow.png");
+  background-position: center center;
+  background-repeat: no-repeat, repeat;
+  background-size: 120vw;
   font-family: 'Montserrat', Verdana;
 }
 
 /* ========   MOBILE-FIRST GRID LAYOUT   ======= */
+
 .calendar-grid {
   display: grid;
   width: 90%;
@@ -27,12 +28,12 @@ body {
                       "day19    day24     day21";
 }
 /* =======    MEDIA QUERY -- DESKTOP LAYOUT  =======  */
+
 @media only screen and (min-width: 520px) {
 
   body {
-    background-color: #266c8e;
-    background-image: url("images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full_v2.png"), url("images/brighton-images/snow.png");
-    background-position: center center, center top;
+    background-image: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full_v2.png"), url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/snow.png");
+    background-position: center top;
     background-repeat: no-repeat, repeat;
     background-size: 125vw;
   }
@@ -48,33 +49,19 @@ body {
   }
 }
 /* =======    INDIVIDUAL GRID ITEMS   =======  */
+
 .title {
   grid-area: title;
-  /* background: rgba(200, 255, 255, 0.9); */
-  border-radius: 6px;
-  min-height: 200px;
-  /* border: 1.5px solid #ffffff; */
-}
-.title-text {
-  /* transform: rotate(-10deg); */
-  /* padding: 20px; */
   text-align: center;
-  /* font-family: 'Berkshire Swash', Courier; */
-  /* font-family: 'BioRhyme', serif; */
-  /* font-family: 'Oleo Script Swash Caps', cursive; */
-  /* font-family: 'Bevan', cursive; */
-  /* font-size: 5vw; */
-  /* background: rgba(255,255,255,0.9); */
-  border-radius: 6px;
   color: #0a5656;
 }
-.box {
+
+.title-lines-container {
   background: #ffffff;
   border-radius: 30px 0;
   border: 5px solid #fe52ff;
-  /* box-shadow: 0px 0px 15px white; */
   transform: rotate(2deg);
-  margin: 1.5% 0 0 0px;
+  margin: 1.5% 0 0 0;
 }
 
 .title-line1 {
@@ -86,24 +73,21 @@ body {
 .title-line2 {
   font-family: 'BioRhyme', Courier;
   font-size: 3vw;
-  margin: 0;
   line-height: 1.1em;
+  margin: 0;
   padding: 0 15px 15px;
 }
 .bigger-text {
   font-size: 3.2vw;
 }
 .title-intro {
-  padding: 20px 25px;
   background: #ffffff;
+  padding: 20px 25px;
   border: 1px solid #0a5656;
   border-radius: 0 30px;
-  /* text-align: justify;
-  text-align-last: center; */
   line-height: 1.5em;
-  margin: 5% 2% 2%;
-  /* box-shadow: 0px 0px 15px white; */
   transform: rotate(-1.5deg);
+  margin: 5% 2% 2%;
 }
 
 .day1 {
@@ -223,17 +207,14 @@ body {
 }
 .door .front {
   background: rgba(29, 101, 135, 0.1);
-  /* text-shadow: 1px 1px 0 black; */
-  /* text-shadow: 1px 1px 0 #344f63, 1px -1px 0 #344f63, -1px 1px 0 #344f63, -1px -1px 0 #344f63, 1px 0px 0 #344f63, 0px 1px 0 #344f63, -1px 0px 0 #344f63, 0px -1px 0 #344f63; */
-  text-shadow: 2px 2px 0 #344f63, 2px -2px 0 #344f63, -2px 2px 0 #344f63, -2px -2px 0 #344f63, 2px 0px 0 #344f63, 0px 2px 0 #344f63, -2px 0px 0 #344f63, 0px -2px 0 #344f63;
-  /* text-shadow:1px 1px 10px rgba(255,255,255,0.2),
-              1px -1px 10px rgba(255,255,255,0.2),
-              -1px 1px 10px rgba(255,255,255,0.2),
-              -1px -1px 10px rgba(255,255,255,0.2),
-              1px 0px 10px rgba(255,255,255,0.2),
-              0px 1px 10px rgba(255,255,255,0.2),
-              -1px 0px 10px rgba(255,255,255,0.2),
-              0px -1px 10px rgba(255,255,255,0.2); */
+  text-shadow:  2px 2px 0 #344f63,
+                2px -2px 0 #344f63,
+                -2px 2px 0 #344f63,
+                -2px -2px 0 #344f63,
+                2px 0px 0 #344f63,
+                0px 2px 0 #344f63,
+                -2px 0px 0 #344f63,
+                0px -2px 0 #344f63;
 }
 .door .back {
   background-size: contain;
@@ -246,48 +227,47 @@ body {
   transform: rotateY(180deg);
 }
 /* =======   MODAL (BACKGROUND)   =======  */
+
 .modal {
-  display: none;
-  /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: #000;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #000; /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* =======   MODAL CONTENT + BOX   =======  */
+
 .modalContent {
-  background-color: #fffcf7;
+  background-color: #ffffff;
   margin: 15% auto;
   padding: 20px 20px 30px;
-  /* border: 1px solid #888; */
   border: 4px solid #fe52ff;
   border-radius: 6px;
-  width: 70%;
+  width: 76%;
   max-width: 600px;
   min-height: 200px;
-  /* box-shadow: 0 0 15px white; */
   letter-spacing: 0.5px;
   line-height: 1.4em;
 }
 .modalContent p {
   font-size: 0.9em;
 }
+
 .dailyTitle {
   font-family: 'BioRhyme', Courier;
   color: #135270;
 }
+
 .dailyDate {
   color: #f50cf7;
 }
+
 .highlight {
   font-weight: bold;
   color: #f50cf7;
@@ -300,6 +280,7 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  line-height: 2.3em;
 }
 .dailyLink:hover {
   background-color: #2883af;

@@ -1,8 +1,20 @@
+$backgroundteal: #266c8e;
+$textteal: #0a5656;
+$borderpink: #fe52ff;
+$textpink: #f50cf7;
+$darkslate: #344f63;
+$doorback: #135270;
+$titlebackground: #ffffff;
+$numbers: #ffffff;
+$linkbuttonhover: #2883af;
+
 body {
-  background-color: #97edd2;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snow-bg.svg) no-repeat top center #82d8cb;
-  background-size: cover;
-  font-family: 'Life Savers', Courier;
+  background-color: $backgroundteal;
+  background-image: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_mobile_v2.png"), url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/snow.png");
+  background-position: center center;
+  background-repeat: no-repeat, repeat;
+  background-size: 120vw;
+  font-family: 'Montserrat', Verdana;
 }
 
 /* ========   MOBILE-FIRST GRID LAYOUT   ======= */
@@ -30,7 +42,15 @@ body {
 
 /* =======    MEDIA QUERY -- DESKTOP LAYOUT  =======  */
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 520px) {
+
+  body {
+    background-image: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full_v2.png"), url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/snow.png");
+    background-position: center top;
+    background-repeat: no-repeat, repeat;
+    background-size: 125vw;
+  }
+
   .calendar-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:    "title      title     title     day2      day7      day8"
@@ -46,15 +66,41 @@ body {
 
 .title {
   grid-area: title;
-  background: #82e0c2;
-  border-radius: 6px;
+  text-align: center;
+  color: $textteal;
 }
 
-.title-text {
-  // @include responsive-font(6vw, 32px, 72px, 48px);
-  transform: rotate(-10deg);
-  padding: 20px;
-  text-align: center;
+.title-lines-container {
+  background: $titlebackground;
+  border-radius: 30px 0;
+  border: 5px solid $borderpink;
+  transform: rotate(2deg);
+  margin: 1.5% 0 0 0;
+}
+.title-line1 {
+  font-family: 'Oleo Script Swash Caps', Courier;
+  font-size: 4vw;
+  margin: 0;
+  padding: 15px 15px 0;
+}
+.title-line2 {
+  font-family: 'BioRhyme', Courier;
+  font-size: 3vw;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0 15px 15px;
+}
+.bigger-text {
+  font-size: 3.2vw;
+}
+.title-intro {
+  background: $titlebackground;
+  padding: 20px 25px;
+  border: 1px solid #0a5656;
+  border-radius: 0 30px;
+  line-height: 1.5em;
+  transform: rotate(-1.5deg);
+  margin: 5% 2% 2%;
 }
 
 .day1 {
@@ -145,15 +191,18 @@ body {
   perspective: 1000px;
   transform-style: preserve-3d;
   transition: all 300ms;
-  border: 2px dashed transparent;
+  border: 1.5px dashed $darkslate;
   border-radius: 10px;
   cursor: pointer;
   min-height: 110px;
+  font-family: 'BioRhyme', serif;
+  font-size: 60px;
+  color: $numbers;
   &.no-hover {
-   border-color: none;
+   border-color: $darkslate;
   }
   &:not(.no-hover):hover {
-    border-color: red;
+    border: 1.5px dashed $numbers;
   }
 }
 
@@ -169,15 +218,23 @@ body {
    justify-content: center;
  }
 
-.door .front {
-  background: rgba(255,255,255,0.2);
-}
+ .door .front {
+   background: rgba(29, 101, 135, 0.1);
+   text-shadow:  2px 2px 0 $darkslate,
+                 2px -2px 0 $darkslate,
+                 -2px 2px 0 $darkslate,
+                 -2px -2px 0 $darkslate,
+                 2px 0px 0 $darkslate,
+                 0px 2px 0 $darkslate,
+                 -2px 0px 0 $darkslate,
+                 0px -2px 0 $darkslate;
+ }
 
 .door .back {
    background-size: contain;
    background-position: center center;
    background-repeat: no-repeat;
-   background-color: #2e313d;
+   background-color: $doorback;
    transform: rotateY(180deg);
 }
 
@@ -203,13 +260,46 @@ body {
 /* =======   MODAL CONTENT + BOX   =======  */
 
 .modalContent {
-  background-color: #fefefe;
+  background-color: $titlebackground;
   margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 70%;
+  padding: 20px 20px 30px;
+  border: 4px solid $borderpink;
+  border-radius: 6px;
+  width: 76%;
   max-width: 600px;
   min-height: 200px;
+  letter-spacing: 0.5px;
+  line-height: 1.4em;
+  p {
+    font-size: 0.9em;
+  }
+}
+
+.dailyTitle {
+  font-family: 'BioRhyme', Courier;
+  color: $doorback;
+}
+
+.dailyDate {
+  color: $textpink;
+}
+
+.highlight {
+  font-weight: bold;
+  color: $textpink;
+}
+
+.dailyLink {
+  background-color: $doorback;
+  padding: 5px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: $numbers;
+  font-weight: bold;
+  line-height: 2.3em;
+  &:hover {
+    background-color: $linkbuttonhover;
+  }
 }
 
 /* =======   MODAL CLOSE BUTTON (X)   =======  */
@@ -227,8 +317,6 @@ body {
     cursor: pointer;
   }
 }
-
-
 
 
 
