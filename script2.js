@@ -1,8 +1,8 @@
 // ======  Want each of 24 calendar doors to open, on click, only if number matches today's date or earlier. To test other dates, set var todaysDate to a fixed number to pretend that's today's date. ====== //
 
-var date = new Date();
-var todaysDate = date.getDate();
-// var todaysDate = 24;
+// var date = new Date();
+// var todaysDate = date.getDate();
+var todaysDate = 24;
 
 // =====  Get the modal popup box + content + close span ===== //
 

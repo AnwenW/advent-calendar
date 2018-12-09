@@ -42,7 +42,7 @@ body {
 
 /* =======    MEDIA QUERY -- DESKTOP LAYOUT  =======  */
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 530px) {
 
   body {
     background-image: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full_v2.png"), url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/snow.png");
@@ -196,7 +196,7 @@ body {
   cursor: pointer;
   min-height: 110px;
   font-family: 'BioRhyme', serif;
-  font-size: 60px;
+  font-size: 58px;
   color: $numbers;
   &.no-hover {
    border-color: $darkslate;
@@ -318,6 +318,11 @@ body {
   }
 }
 
+@media only screen and (max-width: 690px) {
+  .door {
+    font-size: 46px;
+  }
+}
 
 
 /* ///
