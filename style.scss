@@ -1,3 +1,5 @@
+/* ========   SCSS COLOUR VARIABLES   ======= */
+
 $backgroundteal: #266c8e;
 $textteal: #0a5656;
 $borderpink: #fe52ff;
@@ -7,6 +9,48 @@ $doorback: #135270;
 $titlebackground: #ffffff;
 $numbers: #ffffff;
 $linkbuttonhover: #2883af;
+
+/* ========   SCSS RESPONSIVE TITLE TYPE @MIXIN   ======= */
+
+/// Viewport sized typography with minimum and maximum values
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+/// @include responsive-font(5vw, 35px, 150px, 50px);
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+/* ======================================= */
 
 body {
   background-color: $backgroundteal;
@@ -79,19 +123,19 @@ body {
 }
 .title-line1 {
   font-family: 'Oleo Script Swash Caps', Courier;
-  font-size: 4vw;
+  @include responsive-font(4vw, 30px, 60px, 45px);
   margin: 0;
   padding: 15px 15px 0;
 }
 .title-line2 {
   font-family: 'BioRhyme', Courier;
-  font-size: 3vw;
+  @include responsive-font(3vw, 22px, 44px, 35px);
   line-height: 1.1em;
   margin: 0;
   padding: 0 15px 15px;
 }
 .bigger-text {
-  font-size: 3.2vw;
+  @include responsive-font(3.5vw, 26px, 50px, 40px);
 }
 .title-intro {
   background: $titlebackground;
@@ -323,46 +367,3 @@ body {
     font-size: 46px;
   }
 }
-
-
-/* ///
-/// Viewport sized typography with minimum and maximum values
-///
-/// @author Eduardo Boucas (@eduardoboucas)
-///
-/// @param {Number}   $responsive  - Viewport-based size
-/// @param {Number}   $min         - Minimum font size (px)
-/// @param {Number}   $max         - Maximum font size (px)
-///                                  (optional)
-/// @param {Number}   $fallback    - Fallback for viewport-
-///                                  based units (optional)
-///
-/// @example scss - 5vw font size (with 50px fallback),
-///                 minumum of 35px and maximum of 150px
-///  @include responsive-font(5vw, 35px, 150px, 50px);
-/// */
-
-
-// @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
-//   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
-//   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
-//   $min-breakpoint: $min / $responsive-unitless * 100;
-
-//   @media (max-#{$dimension}: #{$min-breakpoint}) {
-//     font-size: $min;
-//   }
-
-//   @if $max {
-//     $max-breakpoint: $max / $responsive-unitless * 100;
-
-//     @media (min-#{$dimension}: #{$max-breakpoint}) {
-//       font-size: $max;
-//     }
-//   }
-
-//   @if $fallback {
-//     font-size: $fallback;
-//   }
-
-//   font-size: $responsive;
-// }
