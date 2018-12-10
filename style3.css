@@ -1,0 +1,375 @@
+body {
+  background-color: #266c8e;
+  background-image: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_mobile_v2.png"), url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/snow.png");
+  background-position: center center;
+  background-repeat: no-repeat, repeat;
+  background-size: 120vw;
+  font-family: 'Montserrat', Verdana;
+}
+
+/* ========   MOBILE-FIRST GRID LAYOUT   ======= */
+
+.calendar-grid {
+  display: grid;
+  width: 96%;
+  max-width: 900px;
+  margin: 2% auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  grid-template-areas: "title    title     title" "day23    day20     day12" "day2     day14     day4" "day5     day22     day16" "day1     day7      day9" "day10    day11     day18" "day13    day3      day15" "day6     day17     day8" "day19    day24     day21";
+}
+
+/* =======    MEDIA QUERY -- DESKTOP LAYOUT  =======  */
+
+@media only screen and (min-width: 530px) {
+  body {
+    background-image: url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/Brighton-Pavilion-Illustration_AnwenW_full_v2.png"), url("https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/brighton-images/snow.png");
+    background-position: center top;
+    background-repeat: no-repeat, repeat;
+    background-size: 125vw;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "title      title     title     day2      day7      day8" "title      title     title     day4      day11     day12" "title      title     title     day19     day9      day13" "day6       day1      day24     day24     day21     day20" "day17      day18     day24     day24     day5      day22" "day3       day23     day16     day14     day10     day15";
+  }
+}
+
+/* =======    INDIVIDUAL GRID ITEMS   =======  */
+
+.title {
+  grid-area: title;
+  text-align: center;
+  color: #0a5656;
+}
+.title-lines-container {
+  background: #fff;
+  border-radius: 30px 0;
+  border: 5px solid #fe52ff;
+  transform: rotate(2deg);
+  margin: 1.5% 0 0 0;
+}
+.title-line1 {
+  font-family: 'Oleo Script Swash Caps', Courier;
+  font-size: 45px;
+  font-size: 4vw;
+  margin: 0;
+  padding: 15px 15px 0;
+}
+@media (max-width: 750px) {
+  .title-line1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1500px) {
+  .title-line1 {
+    font-size: 60px;
+  }
+}
+.title-line2 {
+  font-family: 'BioRhyme', Courier;
+  font-size: 35px;
+  font-size: 3vw;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0 15px 15px;
+}
+@media (max-width: 700px) {
+  .title-line2 {
+    font-size: 21px;
+  }
+}
+@media (min-width: 1466.66667px) {
+  .title-line2 {
+    font-size: 44px;
+  }
+}
+.bigger-text {
+  font-size: 40px;
+  font-size: 3.5vw;
+}
+@media (max-width: 742.85714px) {
+  .bigger-text {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1428.57143px) {
+  .bigger-text {
+    font-size: 50px;
+  }
+}
+.title-intro {
+  background: #fff;
+  padding: 20px 25px;
+  border: 1px solid #0a5656;
+  border-radius: 0 30px;
+  line-height: 1.5em;
+  transform: rotate(-1.5deg);
+  margin: 5% 2% 2%;
+}
+.day1 {
+  grid-area: day1;
+}
+.day1 .back {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child.svg);
+}
+.day2 {
+  grid-area: day2;
+}
+.day3 {
+  grid-area: day3;
+}
+.day4 {
+  grid-area: day4;
+}
+.day5 {
+  grid-area: day5;
+}
+.day6 {
+  grid-area: day6;
+}
+.day7 {
+  grid-area: day7;
+}
+.day8 {
+  grid-area: day8;
+}
+.day9 {
+  grid-area: day9;
+}
+.day10 {
+  grid-area: day10;
+}
+.day11 {
+  grid-area: day11;
+}
+.day12 {
+  grid-area: day12;
+}
+.day13 {
+  grid-area: day13;
+}
+.day14 {
+  grid-area: day14;
+}
+.day15 {
+  grid-area: day15;
+}
+.day16 {
+  grid-area: day16;
+}
+.day17 {
+  grid-area: day17;
+}
+.day18 {
+  grid-area: day18;
+}
+.day19 {
+  grid-area: day19;
+}
+.day20 {
+  grid-area: day20;
+}
+.day21 {
+  grid-area: day21;
+}
+.day22 {
+  grid-area: day22;
+}
+.day23 {
+  grid-area: day23;
+}
+.day24 {
+  grid-area: day24;
+}
+
+/* =======    DOOR STYLES   =======  */
+
+.calendar-grid input {
+  display: none;
+}
+.door {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 300ms;
+  border: 1.5px dashed #344f63;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 110px;
+  font-family: 'BioRhyme', serif;
+  font-size: 58px;
+  color: #fff;
+}
+.door.no-hover {
+  border-color: #344f63;
+}
+.door:not(.no-hover):hover {
+  border: 1.5px dashed #fff;
+}
+.door div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.door .front {
+  background: rgba(29, 101, 135, 0.1);
+  text-shadow: 2px 2px 0 #344f63, 2px -2px 0 #344f63, -2px 2px 0 #344f63, -2px -2px 0 #344f63, 2px 0px 0 #344f63, 0px 2px 0 #344f63, -2px 0px 0 #344f63, 0px -2px 0 #344f63;
+}
+.door .back {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #135270;
+  transform: rotateY(180deg);
+}
+.open {
+  transform: rotateY(180deg);
+}
+footer {
+  height: 50px;
+  padding: 15px 15px 10px;
+  text-align: right;
+}
+footer p {
+  margin-top: 25px;
+  color: #222;
+}
+
+/* =======   MODAL (BACKGROUND)   =======  */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* =======   MODAL CONTENT + BOX   =======  */
+
+.modalContent {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px 20px 30px;
+  border: 4px solid #fe52ff;
+  border-radius: 6px;
+  width: 76%;
+  max-width: 600px;
+  min-height: 200px;
+  letter-spacing: 0.5px;
+  line-height: 1.4em;
+}
+.modalContent p {
+  font-size: 0.9em;
+}
+.dailyTitle {
+  font-family: 'BioRhyme', Courier;
+  color: #135270;
+}
+.dailyDate {
+  color: #f50cf7;
+}
+.highlight {
+  font-weight: bold;
+  color: #f50cf7;
+}
+.dailyLink {
+  background-color: #135270;
+  padding: 5px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  line-height: 2.3em;
+}
+.dailyLink:hover {
+  background-color: #2883af;
+}
+
+/* =======   MODAL CLOSE BUTTON (X)   =======  */
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+@media only screen and (max-width: 519px) {
+  .title-line1 {
+    font-size: 38px;
+    font-size: 10vw;
+  }
+  .title-line2 {
+    font-size: 35px;
+    font-size: 8vw;
+  }
+  .bigger-text {
+    font-size: 40px;
+    font-size: 10vw;
+  }
+  .title-intro {
+    padding: 18px 18px;
+  }
+}
+@media only screen and (max-width: 519px) and (max-width: 340px) {
+  .title-line1 {
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width: 519px) and (min-width: 520px) {
+  .title-line1 {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 519px) and (max-width: 337.5px) {
+  .title-line2 {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 519px) and (min-width: 600px) {
+  .title-line2 {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 519px) and (max-width: 320px) {
+  .bigger-text {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 519px) and (min-width: 520px) {
+  .bigger-text {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .door {
+    font-size: 46px;
+  }
+}

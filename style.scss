@@ -129,7 +129,7 @@ body {
 }
 .title-line2 {
   font-family: 'BioRhyme', Courier;
-  @include responsive-font(3vw, 22px, 44px, 35px);
+  @include responsive-font(3vw, 21px, 44px, 35px);
   line-height: 1.1em;
   margin: 0;
   padding: 0 15px 15px;
@@ -286,6 +286,16 @@ body {
   transform: rotateY(180deg);
 }
 
+footer {
+  height: 50px;
+  padding: 15px 15px 10px;
+  text-align: right;
+  p {
+    margin-top: 25px;
+    color: #222222;
+  }
+}
+
 /* =======   MODAL (BACKGROUND)   =======  */
 
 .modal {
@@ -359,6 +369,23 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+@media only screen and (max-width: 519px) {
+  .title-line1 {
+    @include responsive-font(10vw, 34px, 52px, 38px);
+  }
+  .title-line2 {
+    @include responsive-font(8vw, 27px, 48px, 35px);
+  }
+  .bigger-text {
+    @include responsive-font(10vw, 32px, 52px, 40px);
+  }
+  .title-intro {
+    padding: 18px 18px;
   }
 }
 
