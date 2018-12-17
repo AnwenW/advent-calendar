@@ -149,78 +149,147 @@ body {
 
 .day1 {
   grid-area: day1;
-}
-.day1 .back {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child.svg);
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/1-beachhut.png);
+  }
 }
 .day2 {
   grid-area: day2;
+ .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/2-openhouses.png);
+  }
 }
 .day3 {
   grid-area: day3;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/3-choir.png);
+  }
 }
 .day4 {
   grid-area: day4;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/4-seagull.png);
+  }
 }
 .day5 {
   grid-area: day5;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/5-wine.png);
+  }
 }
 .day6 {
   grid-area: day6;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/6-guitar.png);
+  }
 }
 .day7 {
   grid-area: day7;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/7-gifts.png);
+  }
 }
 .day8 {
   grid-area: day8;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/8-santadash.png);
+  }
 }
 .day9 {
   grid-area: day9;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/9-pavilion.png);
+  }
 }
 .day10 {
   grid-area: day10;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/10-camel.png);
+  }
 }
 .day11 {
   grid-area: day11;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/11-grimmtales.png);
+  }
 }
 .day12 {
   grid-area: day12;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/12-ghost.png);
+  }
 }
 .day13 {
   grid-area: day13;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/13-snowman.png);
+  }
 }
 .day14 {
   grid-area: day14;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/14-xmastree.png);
+  }
 }
 .day15 {
   grid-area: day15;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/15-snowflake.png);
+  }
 }
 .day16 {
   grid-area: day16;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/16-fairy.png);
+  }
 }
 .day17 {
   grid-area: day17;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/17-skates.png);
+  }
 }
 .day18 {
   grid-area: day18;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/18-bells.png);
+  }
 }
 .day19 {
   grid-area: day19;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/19-reindeer.png);
+  }
 }
 .day20 {
   grid-area: day20;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/20-candle.png);
+  }
 }
 .day21 {
   grid-area: day21;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/21-lantern.png);
+  }
 }
 .day22 {
   grid-area: day22;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/22-glitterball.png);
+  }
 }
 .day23 {
   grid-area: day23;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/23-viking.png);
+  }
 }
 .day24 {
   grid-area: day24;
+  .back {
+    background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/24-dove.png);
+  }
 }
 
 /* =======    DOOR STYLES   =======  */
