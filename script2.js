@@ -157,7 +157,7 @@ var moreInfo = [
                     location: "St Andrew's Church, Waterloo Street",
                     price: "£14.00",
                     linkUrl: "https://www.ticketsource.co.uk/whats-on/hove/st-andrews-church/hove-for-the-holidays-evergreen",
-                    linkText: "Visit TicketSource website"
+                    linkText: "Visit TicketSource"
                   },
 
                   { date: "15th December",
@@ -227,7 +227,7 @@ var moreInfo = [
                     location: "Parade kicks off from New Road, ending on Madeira Drive",
                     price: "Free/ Make a donation",
                     linkUrl: "https://www.crowdfunder.co.uk/burning-the-clocks-2018",
-                    linkText: "Visit Crowdfunder website"
+                    linkText: "Visit Crowdfunder"
                   },
 
                   { date: "22nd December",
